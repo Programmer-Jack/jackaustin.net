@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -43,6 +44,21 @@ export default function Home() {
             className={styles.secondary}
           >
             Read our docs
+          </a>
+          <a
+            className={styles.primary}
+            href="/test"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              className={styles.logo}
+              src="/vercel.svg"
+              alt="Vercel logomark"
+              width={20}
+              height={20}
+            />
+            OPEN TEST PAGE
           </a>
         </div>
       </main>
