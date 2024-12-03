@@ -9,12 +9,11 @@ export default function Home() {
         <h1>
           // I AM JACK AUSTIN.
         </h1>
-
+        
         <div className={styles.ctas}>
           <a
             className={styles.primary}
             href="/about"
-            target="_blank"
             rel="noopener noreferrer"
           >
             About me
@@ -23,7 +22,6 @@ export default function Home() {
           <a
             className={styles.secondary}
             href="/portfolio"
-            target="_blank"
             rel="noopener noreferrer"
           >
             Portfolio
