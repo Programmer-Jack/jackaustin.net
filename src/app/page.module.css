@@ -1,5 +1,6 @@
 .page {
-  width: 60vw;
+  /* width: 60vw; */
+  width: min(80vw, max(60vw, 80vh));
   height: 100%;
   margin: auto;
   padding: 2%;
@@ -7,16 +8,19 @@
 }
 
 .socials {
-  width: 30%;
+  width: 90%;
   margin: auto;
   padding: 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 16px;
+
+  border-style: solid;
+  border-color: #f00;
 }
 
 .primary {
   padding: 12px;
-  margin: auto;
   background-color: #ffee00;
   color: #000;
   /* /* border-style: solid;
@@ -26,7 +30,6 @@
 
 .secondary {
   padding: 12px;
-  margin: auto;
   background-color: #222;
   color: #ffee00;
   border-style: solid;
