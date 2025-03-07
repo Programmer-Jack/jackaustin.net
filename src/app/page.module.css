@@ -15,8 +15,8 @@
   justify-content: center;
   gap: 16px;
 
-  border-style: solid;
-  border-color: #f00;
+  /*border-style: solid;
+  border-color: #f00;*/
 }
 
 .primary {
