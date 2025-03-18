@@ -8,8 +8,8 @@
 
 :root {
     --violet: #7d00ffff;
-    --gunmetal: #2f383fff;
-    --paynes-gray: rgb(80, 95, 97);
+    --gunmetal: rgb(19, 0, 77);
+    --paynes-gray: rgb(56, 56, 56);
     --lime: #c6ff00ff;
     --white: #ffffffff;
 }
@@ -43,6 +43,14 @@ header {
 
     background-color: var(--paynes-gray);
     box-shadow: 1px 1px 2px black;
+}
+
+header a {
+    color: var(--lime);
+}
+
+header a:visited {
+    color: var(--lime)
 }
 
 header a:hover {
