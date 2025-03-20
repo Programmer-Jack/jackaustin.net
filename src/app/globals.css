@@ -4,18 +4,14 @@
     font-family: "Oxygen Mono", monospace;
     font-weight: 400;
     font-style: normal;
-  }  
+}  
 
 :root {
     --violet: #7d00ffff;
-    --gunmetal: rgb(19, 0, 77);
+    --dark-blue: #010101;
     --paynes-gray: rgb(56, 56, 56);
     --lime: #c6ff00ff;
     --white: #ffffffff;
-}
-
-h1 {
-    text-shadow: 0px 0px 2px var(--white);
 }
 
 body {
@@ -23,9 +19,21 @@ body {
     margin: 0;
     padding: 0;
 
-    background-color: var(--gunmetal);
+    background-color: var(--dark-blue);
     color: var(--white);
     font-family: "Oxygen Mono";
+}
+
+main {
+    margin: 0;
+    padding: 0 100px 50px 100px;
+
+    /* box-shadow: 1px 1px 4px var(--lime); */
+}
+
+a {
+    padding: 0px 24px 0px 0px;
+    color: #fff;   
 }
 
 header {
@@ -42,46 +50,17 @@ header {
     justify-content: left;
 
     background-color: var(--paynes-gray);
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 2px 0 4px black;
 }
 
-header a {
+/* header a {
     color: var(--lime);
-}
+} */
 
-header a:visited {
+/* header a:visited {
     color: var(--lime)
-}
+} */
 
 header a:hover {
     transform: scale(105%);
-}
-
-footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 8%;
-
-    position: fixed;
-
-    display: flex;
-    justify-content: center;
-
-    background-color: #222;
-}
-
-.footer {
-    padding: 8px;
-    width: 60%;
-
-    display: flex;
-    justify-content: space-between;
-
-    color: #ffee00;
-}
-
-a {
-    padding: 0px 24px 0px 0px;
-    color: #fff;   
 }

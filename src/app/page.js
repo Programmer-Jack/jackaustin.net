@@ -41,26 +41,27 @@ export default function Home() {
               href="https://github.com/Programmer-Jack"
               rel="noopener noreferrer"
             >
-              {/* <img
-                src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
-                width={100}
-                height={100}
-                alt="GitHub logo"
-              /> */}
+              <div className={styles.iconContainer}>
+                <Image
+                  src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
+                  fill={true}
+                  alt="GitHub logo"
+                />
+              </div>
               GitHub
             </a>
             <a
               className={styles.primary}
+              href="https://linkedin.com/in/iamjackaustin/"
+            >
+              LinkedIn
+            </a>
+            <a
+              className={styles.secondary}
               href="https://bsky.app/profile/jackaustin.net"
               rel="noopener noreferrer"
             >
               bsky
-            </a>
-            <a
-              className={styles.secondary}
-              href="https://linkedin.com/in/iamjackaustin/"
-            >
-              LinkedIn
             </a>
           </div>
         </section>
