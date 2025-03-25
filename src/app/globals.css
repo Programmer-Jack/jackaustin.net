@@ -28,7 +28,7 @@ main {
     margin: 0;    
     width: min(90vw, max(50vw, 95vh));
     height: 100%;
-    padding: 10px 100px 50px 100px;
+    padding: 10px 10px 50px 10px;
     justify-self: center;
 
     /* background-color: var(--paynes-gray); */
@@ -53,7 +53,7 @@ header {
     justify-content: left;
 
     background-color: var(--paynes-gray);
-    box-shadow: 2px 0 4px black;
+    /* box-shadow: 2px 0 4px var(--lime); */
 }
 
 /* header a {

@@ -25,12 +25,25 @@
   transform: scale(105%);
 }
 
+/* Buttons */
+
 .primary,
 .secondary {
   padding: 12px;
 
+  /* vertical-align: middle; */
+  display: flex;
+  gap: 4px;
+
   border-radius: 4px;
   box-shadow: 0 0 3px var(--lime);
+}
+
+.primary p,
+.secondary p {
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
 }
 
 .primary {
@@ -48,9 +61,9 @@
 }
 
 .iconContainer {
+  width: 40px;
+  height: 40px;
   position: relative;
-}
 
-.iconContainer Image {
   object-fit: cover;
 }
