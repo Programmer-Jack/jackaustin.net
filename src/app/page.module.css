@@ -1,53 +1,69 @@
-.page {
+/* .page {
   width: min(90vw, max(50vw, 95vh));
   height: 100%;
-  margin: auto;
+  margin: 0;
   padding: 1%;
+  justify-self: center;
 
   background-color: var(--paynes-gray);
-  box-shadow: 1px 1px 2px black;
-}
+  box-shadow: 0 0 4px var(--lime);
+} */
 
 .socials {
+  box-sizing: border-box; /* Why this isn't inherited, I couldn't tell ya*/
   width: 100%;
-  margin: auto;
-  /* padding: 5%; */
-  display: flex;
-  justify-content: center;
-  gap: 32px;
+  margin: 0;
+  padding: 8px;
 
-  /* box-shadow: 0 0 2px var(--lime); */
+  justify-content: center;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 .socials a:hover {
   transform: scale(105%);
 }
 
-.primary {
+/* Buttons */
+
+.primary,
+.secondary {
   padding: 12px;
 
-  background-color: var(--lime);
-  color: var(--gunmetal);
-  /* /* border-style: solid;
-  border-color: #000; */
-  border-radius: 4px;
+  /* vertical-align: middle; */
+  display: flex;
+  gap: 4px;
 
+  border-radius: 4px;
   box-shadow: 0 0 3px var(--lime);
+}
+
+.primary p,
+.secondary p {
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+.primary {
+  background-color: var(--lime);
+  color: var(--very-dark-gray);
 }
 
 .secondary {
-  padding: 12px;
-  background-color: var(--gunmetal);
+  background-color: var(--very-dark-gray);
   color: var(--lime);
+
   border-style: solid;
   border-width: 1px;
   border-color: var(--lime);
-  border-radius: 4px;
-
-  box-shadow: 0 0 3px var(--lime);
 }
 
-.primary img {
-  width: 17%;
-  height: auto;
+.iconContainer {
+  width: 40px;
+  height: 40px;
+  position: relative;
+
+  object-fit: cover;
 }

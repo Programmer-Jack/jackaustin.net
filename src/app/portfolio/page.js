@@ -1,12 +1,12 @@
-import styles from "../page.module.css"
+import styles from "./page.module.css"
 import Image from "next/image"
 import roomImage from "/public/the_room.png"
 import screenImage from "/public/the_screen.png"
 
 export default function Portfolio() {
     return (
-        <div className={styles.page}>
-            <main className={styles.main}>
+        <div>
+            <main>
                 <h1>
                     // PORTFOLIO
                 </h1>
