@@ -41,6 +41,12 @@ export default function RootLayout({ children }) {
             >
             Portfolio
           </Link>
+          <Link
+            href="/space-western"
+            rel="nooper noreferrer"
+            >
+            Play <em>Space Western</em>
+          </Link>
         </header>
         {children}
         {/* <footer>

@@ -1,4 +1,4 @@
-.page {
+/* .page {
   width: min(90vw, max(50vw, 95vh));
   height: 100%;
   margin: 0;
@@ -6,8 +6,8 @@
   justify-self: center;
 
   background-color: var(--paynes-gray);
-  /* box-shadow: 0 0 4px var(--lime); */
-}
+  box-shadow: 0 0 4px var(--lime);
+} */
 
 .socials {
   box-sizing: border-box; /* Why this isn't inherited, I couldn't tell ya*/
@@ -35,11 +35,11 @@
 
 .primary {
   background-color: var(--lime);
-  color: var(--dark-blue);
+  color: var(--very-dark-gray);
 }
 
 .secondary {
-  background-color: var(--dark-blue);
+  background-color: var(--very-dark-gray);
   color: var(--lime);
 
   border-style: solid;
