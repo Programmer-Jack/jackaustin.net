@@ -1,11 +1,11 @@
 :root {
-  --background: #e7e7e7;
+  --background: #e0e0e0;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1a1a1a;
     --foreground: #ffffff;
 
     font-family: Inter, sans-serif;
@@ -35,18 +35,33 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
+  margin: 0% 5% 0% 5%;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-size: clamp(1rem, 10vw, 40rem);
-  font-weight: 900;
-  justify-self: left;
+section,
+div {
+ margin: 4vh 0 4vh 0; 
 }
 
-p {
+h1 {
+  font-size: clamp(12pt, 17vw, 144pt);
+  font-weight: 900;
+  justify-self: left;
+  line-height: clamp(12pt, 16vw, 144pt);
+}
+
+h2 {
+  font-size: clamp(12pt, 8vw, 72pt);
+  font-weight: 800;
+  margin-top: 1vh;
+}
+
+body {
   font-weight: 200;
+  font-size: 16pt;
 }
 
 a {
@@ -55,29 +70,38 @@ a {
   text-decoration: none;
 }
 
-.style-invert div {
-  width: 500px;
-  margin: auto;
-}
+/* Socials */
 
 .socials-flex {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-  gap: 20px;
+  gap: 28px;
   margin: auto;
 }
 
 .socials-flex > div {
-  padding: 20px;
+  padding: 27px;
+}
+
+.social-icon,
+.social-icon-wide {
+  position: relative;
+  height: auto;
 }
 
 .social-icon {
-  position: relative;
   width: auto;
-  height: 50px;
 }
-
+.social-icon-wide {
+  width: 150px
+}
 .social-icon img {
   object-fit: contain;
+}
+
+/* Text sections */
+
+.text-section {
+  margin: 1% 0  1% 0;
 }

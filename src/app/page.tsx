@@ -6,21 +6,18 @@ export default function Home() {
   return (
     <main>
       <section>
-        <div>
-          <h1>Jack Austin</h1>
-          <p>Super Graphic Ultra Modern Games</p>
-          <div className="hero-buttons">
-            <Link href="/portfolio">Portfolio</Link>
-            <Link href="/resume">Resume</Link>
-          </div>
-        </div>
+        <h1>Jack Austin</h1>
+        <h2>Game developer</h2>
       </section>
-      {/* <section className="style-invert"> */}
-        <div><p>Lorem ipsum dolor sit amet dolorosa asdasdh ashdfui asdfjhafkls a a a a a a a</p></div>
+      <section className="text-section">
+        <p>I'm passionate about building games. </p>
+      </section>
+      <section>
+        <h3>Follow my socials</h3>
         <div className="socials-flex">
           <div className="social-icon">
             <a href="https://jackaustin.itch.io/">
-              <Image src="/ItchPressKit/logos/itchio-logo-white.svg" alt="itch.io" fill={true} />
+              <Image src="/ItchPressKit/logos/app-icon.svg" alt="itch.io" fill={true} />
             </a>
           </div>
           <div className="social-icon">
@@ -29,22 +26,24 @@ export default function Home() {
             </a>
           </div>
           <div className="social-icon">
-            <a href="https://bsky.app/profile/jackaustin.net">
-              <Image src="/BlueskyLogos/bluesky_media_kit_logo_transparent_2.png" alt="bsky" fill={true} />
-            </a>
-            </div>
-          <div className="social-icon">
             <a href="https://github.com/Programmer-Jack">
               <Image src="/GitHubLogos/SVG/GitHub_Invertocat_Light.svg" alt="GitHub" fill={true} />
             </a>
           </div>
           <div className="social-icon">
             <a href="https://www.instagram.com/_programmer_jack/">
-              <Image src="/IGPressKit/02 White Glyph/Instagram_Glyph_White.svg" alt="Instagram" fill={true} />
+              <Image src="/IGPressKit/01 Gradient Glyph/Instagram_Glyph_Gradient.svg" alt="Instagram" fill={true} />
+            </a>
+          </div>
+          <div className="social-icon">
+            <a href="https://bsky.app/profile/jackaustin.net">
+              <Image src="/BlueskyLogos/bluesky_media_kit_logo_1.svg" alt="bsky" fill={true} />
             </a>
           </div>
         </div>
-      {/* </section> */}
+        {/* <h3>Play my latest game</h3> */}
+        {/* <iframe frameBorder="0" src="https://itch.io/embed/3759571?bg_color=191919&amp;fg_color=ffffff&amp;link_color=ff7106&amp;border_color=333333" width="552" height="167"><a href="https://jackaustin.itch.io/portal-warpin-robot-killer">Portal Warpin' Robot Killer by Jack Austin</a></iframe> */}
+      </section>
     </main>
   );
 }
