@@ -1,69 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
-
-.oxygen-mono-regular {
-    font-family: "Oxygen Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-}  
-
 :root {
-    --violet: #7d00ffff;
-    --very-dark-gray: #010101;
-    --paynes-gray: rgb(33, 33, 33);
-    --lime: #c6ff00ff;
-    --white: #ffffffff;
+  --background: #e0e0e0;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a1a;
+    --foreground: #ffffff;
+
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  }
+  html {
+    color-scheme: dark;
+  }
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: auto;
 }
 
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  color: var(--foreground);
+  background: var(--background);
+  margin: 0% 5% 0% 5%;
 
-    background-color: var(--very-dark-gray);
-    color: var(--white);
-    font-family: "Oxygen Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-    margin: 0;    
-    width: min(90vw, max(50vw, 95vh));
-    height: 100%;
-    padding: 10px 10px 50px 10px;
-    justify-self: center;
+section,
+div {
+ margin: 4vh 0 4vh 0; 
+}
 
-    /* background-color: var(--paynes-gray); */
+h1 {
+  font-size: clamp(12pt, 17vw, 144pt);
+  font-weight: 900;
+  justify-self: left;
+  line-height: clamp(12pt, 16vw, 144pt);
+}
+
+h2 {
+  font-size: clamp(12pt, 8vw, 72pt);
+  font-weight: 800;
+  margin-top: 1vh;
+}
+
+body {
+  font-weight: 200;
+  font-size: 16pt;
 }
 
 a {
-    padding: 0px 24px 0px 0px;
-    color: #fff;   
+  font-weight: 300;
+  color: inherit;
+  text-decoration: none;
 }
 
-header {
-    box-sizing: border-box;
-    width: 100%;
-    left: 0;
-    top: 0;
-    right: 0;
-    padding: 2vh;
+/* Socials */
 
-    position: sticky;
-
-    display: flex;
-    justify-content: left;
-
-    background-color: var(--paynes-gray);
-    /* box-shadow: 2px 0 4px var(--lime); */
+.socials-flex {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 28px;
+  margin: auto;
 }
 
-/* header a {
-    color: var(--lime);
-} */
+.socials-flex > div {
+  padding: 27px;
+}
 
-/* header a:visited {
-    color: var(--lime)
-} */
+.social-icon,
+.social-icon-wide {
+  position: relative;
+  height: auto;
+}
 
-header a:hover {
-    transform: scale(105%);
+.social-icon {
+  width: auto;
+}
+.social-icon-wide {
+  width: 150px
+}
+.social-icon img {
+  object-fit: contain;
+}
+
+/* Text sections */
+
+.text-section {
+  margin: 1% 0  1% 0;
 }
