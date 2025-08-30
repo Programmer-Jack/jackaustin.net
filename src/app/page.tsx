@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styles from "./page.module.css";
-import Link from "next/link";
+// import styles from "./page.module.css";
+// import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <h2>Game developer</h2>
       </section>
       <section className="text-section">
-        <p>I'm passionate about building games. </p>
+        <p>I&apos;m passionate about building games. </p>
       </section>
       <section>
         <h3>Follow my socials</h3>
