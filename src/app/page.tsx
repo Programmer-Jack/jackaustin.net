@@ -1,35 +1,9 @@
 import React from "react";
-// import Image from "next/image";
-// import styles from "./page.module.css";
 
-// interface LightDarkSocialIconProps {
-// 	lightSrc: string;
-// 	darkSrc: string;
-// 	alt: string;
-// }
-
-// function LightDarkSocialIcon({ lightSrc, darkSrc, alt }: LightDarkSocialIconProps): React.JSX.Element {
-// 	const isDark = typeof window !== "undefined"
-// 		? window.matchMedia("(prefers-color-scheme: dark)").matches
-// 		: true;
-// 	const imgSrc = isDark ? darkSrc : lightSrc;
-
-// 	return (
-// 		<img src={imgSrc}
-// 			 alt={alt}
-// 		></img>
-// 	);
-// }
-
-// const itchLight = "/ItchPressKit/logos/itchio-logo-black.svg"
 const itchDark = "/ItchPressKit/logos/app-icon.svg"
-// const liInLight = "/in-logo/InBug-Black.png"
 const liInDark = "/in-logo/InBug-White.png"
-// const gitHubLight = "/GitHubLogos/SVG/GitHub_Invertocat_Dark.svg"
 const gitHubDark = "/GitHubLogos/SVG/GitHub_Invertocat_Light.svg"
-// const igLight = "/IGPressKit/03 Black Glyph/Instagram_Glyph_Black.svg"
-const igDark = "/IGPressKit/01 Gradient Glyph/Instagram_Glyph_Gradient.svg";
-// const bskyLight = "/BlueskyLogos/bluesky_media_kit_logo.svg";
+const igDark = "/ig/gradient/Instagram_Glyph_Gradient.png";
 const bskyDark = "/BlueskyLogos/bluesky_media_kit_logo_3.svg"
 
 export default function Home() {
@@ -47,61 +21,36 @@ export default function Home() {
 				<div className="socials-grid">
 					<div className="social-icon">
 						<a rel="noopener noreferrer" href="https://jackaustin.itch.io/">
-							{/* <LightDarkSocialIcon
-								lightSrc={itchLight}
-								darkSrc={itchDark}
-								alt="itch.io"
-							/> */}
 							<img src={itchDark}
-								 alt="itch.io"
+								alt="itch.io"
 							></img>
 						</a>
 					</div>
 					<div className="social-icon">
 						<a rel="noopener noreferrer" href="https://www.linkedin.com/in/iamjackaustin/">
-							{/* <LightDarkSocialIcon
-								lightSrc={liInLight}
-								darkSrc={liInDark}
-								alt="LinkedIn"
-							/> */}
 							<img src={liInDark}
-								 alt="LinkedIn"
+								alt="LinkedIn"
 							></img>
 						</a>
 					</div>
 					<div className="social-icon">
 						<a rel="noopener noreferrer" href="https://github.com/Programmer-Jack">
-							{/* <LightDarkSocialIcon
-								lightSrc={gitHubLight}
-								darkSrc={gitHubDark}
-								alt="GitHub"
-							/> */}
 							<img src={gitHubDark}
-								 alt="GitHub"
+								alt="GitHub"
 							></img>
 						</a>
 					</div>
 					<div className="social-icon">
 						<a rel="noopener noreferrer" href="https://www.instagram.com/_programmer_jack/">
-							{/* <LightDarkSocialIcon
-								lightSrc={igLight}
-								darkSrc={igDark}
-								alt="Instagram"
-							/> */}
 							<img src={igDark}
-								 alt="Instagram"
+								alt="Instagram"
 							></img>
 						</a>
 					</div>
 					<div className="social-icon">
 						<a rel="noopener noreferrer" href="https://bsky.app/profile/jackaustin.net">
-							{/* <LightDarkSocialIcon
-								lightSrc={bskyLight}
-								darkSrc={bskyDark}
-								alt="bsky"
-							/> */}
 							<img src={bskyDark}
-								 alt="bsky"
+								alt="bsky"
 							></img>
 						</a>
 					</div>
