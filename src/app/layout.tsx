@@ -20,10 +20,15 @@ export default function RootLayout({
       <body>
         <header className="title">
 				  <h1>Jack Austin</h1>
-          <p><em>makes games, not websites!</em></p>
+          <p>
+            <em>
+              makes <a rel="noopener noreferrer" href="https://jackaustin.itch.io/">games</a>, not websites!
+            </em>
+          </p>
         </header>
         <section>
           <nav className="header-menu">
+            <p><em>paths:</em></p>
             <a href="/">/</a>
             <a href="/portal-warpin-robot-killer">/portal-warpin-robot-killer</a>
           </nav>

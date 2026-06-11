@@ -1,11 +1,12 @@
 import React from "react";
 
-const itchDark = "/ItchPressKit/logos/app-icon.svg"
-const liInDark = "/in-logo/InBug-White.png"
-const gitHubDark = "/GitHubLogos/SVG/GitHub_Invertocat_Light.svg"
-const igDark = "/ig/gradient/Instagram_Glyph_Gradient.png";
-const bskyDark = "/bsky/bluesky_media_kit_logo_3.svg"
-const ytIcon = "/youtube-icon/01-red/yt_icon_red_digital.png"
+const itch = "/logos/itch/app-icon.svg"
+const liIn = "/logos/liin/InBug-White.png"
+const ig = "/logos/ig/Instagram_Glyph_Gradient.png";
+
+const github = "https://cdn.simpleicons.org/github/fff?viewbox=auto"
+const bsky = "https://cdn.simpleicons.org/bluesky?viewbox=auto"
+const yt = "https://cdn.simpleicons.org/youtube?viewbox=auto"
 
 export default function Home() {
 	return (
@@ -17,9 +18,9 @@ export default function Home() {
 					Posted by Simone Lazzari, modified by community. See post 'Timeline' for change history
 					Retrieved 2026-06-10, License - CC BY-SA 4.0
 				*/}
-				<div className="wrapper">
-					<div className="h_iframe">
-						<iframe width={2} height={2} src="https://www.youtube.com/embed/TdvbNz5dkeI?si=Oz8ShNa0j97fgMzl" title="YouTube video player" frameBorder="0"
+				<div className="wrapper wrapper-yt">
+					<div className="h_iframe h_iframe-yt">
+						<iframe width={2} height={2} src="https://www.youtube.com/embed/TdvbNz5dkeI?si=Oz8ShNa0j97fgMzl" title="YouTube video player"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 								referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
 						</iframe>
@@ -31,42 +32,42 @@ export default function Home() {
 				<div className="socials-grid">
 					<div className="social-icon">
 						<a rel="noopener noreferrer" href="https://jackaustin.itch.io/">
-							<img src={itchDark}
+							<img src={itch}
 								alt="itch.io"
 							/>
 						</a>
 					</div>
 					<div className="social-icon">
 						<a rel="noopener noreferrer" href="https://www.linkedin.com/in/iamjackaustin/">
-							<img src={liInDark}
+							<img src={liIn}
 								alt="LinkedIn"
 							/>
 						</a>
 					</div>
 					<div className="social-icon">
 						<a rel="noopener noreferrer" href="https://github.com/Programmer-Jack">
-							<img src={gitHubDark}
+							<img src={github}
 								alt="GitHub"
 							/>
 						</a>
 					</div>
 					<div className="social-icon">
-						<a rel="noopener noreferrer" href="https://www.instagram.com/_programmer_jack/">
-							<img src={igDark}
-								alt="Instagram"
-							/>
-						</a>
-					</div>
-					<div className="social-icon">
 						<a rel="noopener noreferrer" href="https://bsky.app/profile/jackaustin.net">
-							<img src={bskyDark}
+							<img src={bsky}
 								alt="bsky"
 							/>
 						</a>
 					</div>
 					<div className="social-icon">
+						<a rel="noopener noreferrer" href="https://www.instagram.com/_programmer_jack/">
+							<img src={ig}
+								alt="Instagram"
+							/>
+						</a>
+					</div>
+					<div className="social-icon">
 						<a rel="noopener noreferrer" href="https://www.youtube.com/@iamjackaustin">
-							<img src={ytIcon}
+							<img src={yt}
 								alt="YouTube"
 							/>
 						</a>
