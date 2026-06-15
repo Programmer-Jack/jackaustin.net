@@ -3,7 +3,6 @@
   --storm-plus: #004651;
   --storm-afternoon: #00697a;
   --cyan: #00FFE0;
-  --hazYellow: #fbff00;
   --cream: #f8eed3;
 
   --background: var(--storm);
@@ -11,8 +10,19 @@
   --maincolor: var(--cyan);
 
   font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1;
-  /* fix for Chrome */
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+
+.itchWidget {
+  width: 208px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (width >= calc(8rem + 550px)) {
+  .itchWidget {
+    width: 550px;
+  }
 }
 
 @supports (font-variation-settings: normal) {
@@ -74,7 +84,7 @@ p {
 }
 
 a {
-  color: var(--background);
+  color: var(--maincolor);
   text-decoration: none;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
@@ -87,17 +97,12 @@ a:hover {
 
 .socials-grid {
   display: grid;
-  /* border: 1px solid red; */
   grid-template-columns: repeat(auto-fit, minmax(90px, 5vw));
   gap: 2rem;
   justify-content: center;
 }
 
 .social-icon {
-  /* padding: 2em; */
-  /* border: 1px solid var(--maincolor); */
-  /* border-radius: 10px; */
-  /* background-color: var(--background); */
   text-align: center;
 }
 
@@ -127,20 +132,12 @@ Retrieved 2026-06-10, License - CC BY-SA 4.0
   max-width: 530px;
 }
 
-.wrapper-itch {
-  max-width: 550px;
-}
-
 .h_iframe {
   position: relative;
 }
 
 .h_iframe-yt {
   padding-top: 56%;
-}
-
-.h_iframe-itch {
-  padding-top: 30%;
 }
 
 .h_iframe iframe {
@@ -159,7 +156,7 @@ section {
   padding: clamp(0.5rem, 4vw, 2rem);
   margin: clamp(0.5rem, 4vw, 2rem) max(clamp(0.5rem, 4vw, 2rem), calc((100% - 120ch) / 2));
 
-  border: 1px solid var(--storm-plus);
+  border: 1px solid var(--maincolor);
   border-radius: 10px;
 }
 
@@ -171,10 +168,12 @@ section {
   text-decoration: none;
 }
 
-.socials-section {
-  color: var(--maincolor);
-  grid-template-columns: repeat(auto-fit, minmax(90px, 5vw));
-  gap: 2rem;
+.title a {
+  color: var(--background);
+}
+
+.title a:hover {
+  color: var(--cream);
 }
 
 /* Gallery test */

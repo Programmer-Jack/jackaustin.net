@@ -27,7 +27,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="socials-section">
+			<section>
 				<h3>Follow me</h3>
 				<div className="socials-grid">
 					<div className="social-icon">
