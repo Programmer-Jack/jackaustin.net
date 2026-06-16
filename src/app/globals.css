@@ -1,16 +1,18 @@
 :root {
-  --storm: #080808;
-  --lime: #00ff22;
-  --hazYellow: #fbff00;
+  --storm: #00181B;
+  --storm-plus: #004651;
+  --storm-afternoon: #00697a;
+  --cyan: #00FFE0;
+  --haz-yellow: #fff200;
   --cream: #f8eed3;
 
   --background: var(--storm);
-  --foreground: white;
-  --maincolor: var(--lime);
+  --midground: var(--storm-afternoon);
+  --maincolor: var(--cyan);
+  --link: var(--haz-yellow);
 
   font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1;
-  /* fix for Chrome */
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 
 @supports (font-variation-settings: normal) {
@@ -32,8 +34,10 @@ body {
 }
 
 html {
-  color: var(--foreground);
+  color: var(--maincolor);
   text-align: left;
+
+  overscroll-behavior: none;
 }
 
 body {
@@ -42,73 +46,153 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: radial-gradient(var(--background) .95px, transparent .95px),radial-gradient(var(--storm-plus) .95px, var(--background) .95px);
+  background-size: 2rem 2rem;
+  background-position: 0 0, 1rem 1rem;
 }
 
 h1 {
-  font-size: clamp(1.5rem, 11vw, 15rem);
+  font-size: min(72pt, 15vw);
   font-weight: 900;
-  line-height: clamp(1.5rem, 8vw, 15rem);
+  /* line-height: clamp(1.5rem, 8vw, 15rem); */
 }
 
 h2 {
-  font-size: clamp(1.5rem, 7vw, 10rem);
+  font-size: min(48pt, 50vw);
   font-weight: 800;
-  margin-top: 1vh;
 }
 
 h3 {
-  font-size: clamp(1.5rem, 4vw, 5rem);;
-  margin: 1em 0;
+  font-size: min(36pt, 7vw);
+  margin-bottom: 2rem;
 }
 
 p {
-  font-size: clamp(1rem, 1.4vw, 3.5rem);
+  font-size: min(1.4rem, 5vw);
   text-align: justify;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a:hover {
+  color: var(--cream);
+  text-shadow: 0 0 4px var(--cream);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: min(24pt, 4vw);
+  transition: color 0.2s ease, border-color 0.2s ease;
+
+  margin: 0.5rem;
+  padding: 0.5rem;
+
+  border: 1px solid var(--link);
+  border-radius: 10px;
+}
+
+nav p {
+  color: var(--midground);
+}
+
+nav a:hover {
+  color: var(--cream);
+  border: 1px solid var(--cream);
+  box-shadow: 0 0 4px var(--cream);
 }
 
 /* Socials */
 
 .socials-grid {
   display: grid;
-  /* border: 1px solid red; */
   grid-template-columns: repeat(auto-fit, minmax(90px, 5vw));
-  gap: 50px;
+  gap: 2rem;
   justify-content: center;
 }
 
 .social-icon {
-  /* padding: 2em; */
-  /* border: 1px solid var(--maincolor); */
-  /* border-radius: 10px; */
-  background-color: var(--background);
   text-align: center;
 }
 
 .social-icon img {
   max-width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1;
   object-fit: contain;
+}
+
+/* idk */
+
+/*
+Source - https://stackoverflow.com/a/20130011
+Posted by Simone Lazzari, modified by community. See post 'Timeline' for change history
+Retrieved 2026-06-10, License - CC BY-SA 4.0
+*/
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: #CCC
+}
+
+.wrapper-yt {
+  max-width: 530px;
+}
+
+.h_iframe {
+  position: relative;
+}
+
+.h_iframe-yt {
+  padding-top: 56%;
+}
+
+.h_iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border: 0;
 }
 
 /* Sections */
 
 section {
-  margin: 2%;
-  padding-inline: max(1rem, calc((100% - 140ch) / 2));  
+  padding: clamp(0.5rem, 4vw, 2rem);
+  margin: clamp(0.5rem, 4vw, 2rem) max(clamp(0.5rem, 4vw, 2rem), calc((100% - 120ch) / 2));
+
+  border: 1px solid var(--maincolor);
+  border-radius: 10px;
 }
 
 .title {
   margin: 0;
-  padding: max(2rem, 2%);
-  color: black;
+  padding: clamp(0.5rem, 4vw, 2rem);
+  color: var(--background);
   background-color: var(--maincolor);
+  text-decoration: none;
 }
 
-.socials-section {
-  color: var(--foreground);
-  background-color: var(--background);
-  padding-top: 0;
+.title a {
+  color: var(--background);
+}
+
+.title a:hover {
+  color: var(--cream);
 }
 
 /* Gallery test */
@@ -116,7 +200,7 @@ section {
 .photo-gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  gap: 10px;
+  gap: 2rem;
 }
 
 .photo-gallery-container img {
@@ -124,4 +208,16 @@ section {
   height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.itchWidget {
+  width: 208px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (width >= calc(8rem + 550px)) {
+  .itchWidget {
+    width: 550px;
+  }
 }
