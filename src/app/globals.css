@@ -3,26 +3,16 @@
   --storm-plus: #004651;
   --storm-afternoon: #00697a;
   --cyan: #00FFE0;
+  --haz-yellow: #fff200;
   --cream: #f8eed3;
 
   --background: var(--storm);
   --midground: var(--storm-afternoon);
   --maincolor: var(--cyan);
+  --link: var(--haz-yellow);
 
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-}
-
-.itchWidget {
-  width: 208px;
-  display: block;
-  margin: 0 auto;
-}
-
-@media screen and (width >= calc(8rem + 550px)) {
-  .itchWidget {
-    width: 550px;
-  }
 }
 
 @supports (font-variation-settings: normal) {
@@ -84,13 +74,42 @@ p {
 }
 
 a {
-  color: var(--maincolor);
+  color: var(--link);
   text-decoration: none;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 a:hover {
   color: var(--cream);
+  text-shadow: 0 0 4px var(--cream);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: min(24pt, 4vw);
+  transition: color 0.2s ease, border-color 0.2s ease;
+
+  margin: 0.5rem;
+  padding: 0.5rem;
+
+  border: 1px solid var(--link);
+  border-radius: 10px;
+}
+
+nav p {
+  color: var(--midground);
+}
+
+nav a:hover {
+  color: var(--cream);
+  border: 1px solid var(--cream);
+  box-shadow: 0 0 4px var(--cream);
 }
 
 /* Socials */
@@ -191,33 +210,14 @@ section {
   object-fit: cover;
 }
 
-/* From Claude */
-
-.header-menu {
-  display: flex;
-  justify-content: left;
-  gap: clamp(1rem, 5vw, 3rem);
-  padding: 1rem 0;
-  list-style: none;
-  margin: 0;
+.itchWidget {
+  width: 208px;
+  display: block;
+  margin: 0 auto;
 }
 
-.header-menu a,
-.header-menu p {
-  text-decoration: none;
-  font-size: min(24pt, 4vw);
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-.header-menu p {
-  color: var(--midground);
-}
-
-.header-menu a,
-.header-menu a:visited {
-  color: var(--maincolor)
-}
-
-.header-menu a:hover {
-  color: var(--cream);
+@media screen and (width >= calc(8rem + 550px)) {
+  .itchWidget {
+    width: 550px;
+  }
 }

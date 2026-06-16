@@ -27,10 +27,10 @@ export default function RootLayout({
           </p>
         </header>
         <section>
-          <nav className="header-menu">
-            <p><em>paths:</em></p>
-            <a href="/">/</a>
-            <a href="/portal-warpin-robot-killer">/portal-warpin-robot-killer</a>
+          <nav>
+            <a href="/">Home</a>
+            <a href="/portal-warpin-robot-killer">Portal Warpin' Robot Killer</a>
+            <a href="/projects">Projects</a>
           </nav>
         </section>
         {children}
