@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,15 +23,15 @@ export default function RootLayout({
 				  <h1>Jack Austin</h1>
           <p>
             <em>
-              makes <a rel="noopener noreferrer" href="https://jackaustin.itch.io/">games</a>, not websites!
+              makes <Link rel="noopener noreferrer" href="https://jackaustin.itch.io/">games</Link>, not websites!
             </em>
           </p>
         </header>
         <section>
           <nav>
-            <a href="/">Home</a>
-            <a href="/portal-warpin-robot-killer">Portal Warpin' Robot Killer</a>
-            <a href="/projects">Projects</a>
+            <Link href="/">Home</Link>
+            <Link href="/portal-warpin-robot-killer">Portal Warpin&apos; Robot Killer</Link>
+            <Link href="/projects">Projects</Link>
           </nav>
         </section>
         {children}

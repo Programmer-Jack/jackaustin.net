@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const itch = "/logos/itch/app-icon.svg"
 const liIn = "/logos/liin/InBug-White.png"
@@ -14,7 +15,7 @@ export default function Home() {
 			<section>
 				<h3>Latest tutorial</h3>
 				{/* 
-					Source - https://stackoverflow.com/a/20130011
+					Source - https://stackoverflow.com/Link/20130011
 					Posted by Simone Lazzari, modified by community. See post 'Timeline' for change history
 					Retrieved 2026-06-10, License - CC BY-SA 4.0
 				*/}
@@ -31,73 +32,73 @@ export default function Home() {
 				<h3>Follow me</h3>
 				<div className="socials-grid">
 					<div className="social-icon">
-						<a rel="noopener noreferrer" href="https://jackaustin.itch.io/">
+						<Link rel="noopener noreferrer" href="https://jackaustin.itch.io/">
 							<img src={itch}
 								alt="itch.io"
 							/>
-						</a>
+						</Link>
 					</div>
 					<div className="social-icon">
-						<a rel="noopener noreferrer" href="https://www.linkedin.com/in/iamjackaustin/">
+						<Link rel="noopener noreferrer" href="https://www.linkedin.com/in/iamjackaustin/">
 							<img src={liIn}
 								alt="LinkedIn"
 							/>
-						</a>
+						</Link>
 					</div>
 					<div className="social-icon">
-						<a rel="noopener noreferrer" href="https://github.com/Programmer-Jack">
+						<Link rel="noopener noreferrer" href="https://github.com/Programmer-Jack">
 							<img src={github}
 								alt="GitHub"
 							/>
-						</a>
+						</Link>
 					</div>
 					<div className="social-icon">
-						<a rel="noopener noreferrer" href="https://bsky.app/profile/jackaustin.net">
+						<Link rel="noopener noreferrer" href="https://bsky.app/profile/jackaustin.net">
 							<img src={bsky}
 								alt="bsky"
 							/>
-						</a>
+						</Link>
 					</div>
 					<div className="social-icon">
-						<a rel="noopener noreferrer" href="https://www.instagram.com/_programmer_jack/">
+						<Link rel="noopener noreferrer" href="https://www.instagram.com/_programmer_jack/">
 							<img src={ig}
 								alt="Instagram"
 							/>
-						</a>
+						</Link>
 					</div>
 					<div className="social-icon">
-						<a rel="noopener noreferrer" href="https://www.youtube.com/@iamjackaustin">
+						<Link rel="noopener noreferrer" href="https://www.youtube.com/@iamjackaustin">
 							<img src={yt}
 								alt="YouTube"
 							/>
-						</a>
+						</Link>
 					</div>
 				</div>
 			</section>
 			<section>
 				<h3>Gallery</h3>
 				<div className="photo-gallery-container">
-					<a rel="noopener noreferrer" href="https://jackaustin.itch.io/vector-c">
+					<Link rel="noopener noreferrer" href="https://jackaustin.itch.io/vector-c">
 						<img
 							src="/games/vector-c.png"
-							alt="Vector-C, a two-player, arcade-style, top-down shooter."
+							alt="Vector-C, Link two-player, arcade-style, top-down shooter."
 						/>
-					</a>
-					<a rel="noopener noreferrer" href="https://jackaustin.itch.io/portal-warpin-robot-killer">
+					</Link>
+					<Link rel="noopener noreferrer" href="https://jackaustin.itch.io/portal-warpin-robot-killer">
 						<img
 							src="/games/portal_robot_0.png"
-							alt="A brightly glowing orange portal down a concrete corridor"
+							alt="A brightly glowing orange portal down Link concrete corridor"
 						/>
-					</a>
-					<a rel="noopener noreferrer" href="https://jackaustin.itch.io/space-western">
+					</Link>
+					<Link rel="noopener noreferrer" href="https://jackaustin.itch.io/space-western">
 						<img
 							src="/games/space_western.png"
 							alt="An inventory lit up by the desert sun"
 						/>
-					</a>
+					</Link>
 					<img
 						src="/games/the_room.png"
-						alt="A quiet storage room at night, illuminated by a lamp"
+						alt="A quiet storage room at night, illuminated by Link lamp"
 					/>
 				</div>
 			</section>
