@@ -1,13 +1,18 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
-const itch = "/logos/itch/app-icon.svg"
-const liIn = "/logos/liin/InBug-White.png"
-const ig = "/logos/ig/Instagram_Glyph_Gradient.png";
+import VectorCImage from 'public/games/vector-c.png'
+import PortalWarpinImage from 'public/games/portal_robot_0.png'
+import SpaceWesternImg from 'public/games/space_western.png'
+import TheRoomImg from 'public/games/the_room.png'
 
-const github = "https://cdn.simpleicons.org/github/fff?viewbox=auto"
-const bsky = "https://cdn.simpleicons.org/bluesky?viewbox=auto"
-const yt = "https://cdn.simpleicons.org/youtube?viewbox=auto"
+const itch = '/logos/itch/app-icon.svg'
+const liIn = '/logos/liin/InBug-White.png'
+const ig = '/logos/ig/Instagram_Glyph_Gradient.png';
+const github = 'https://cdn.simpleicons.org/github/fff?viewbox=auto'
+const bsky = 'https://cdn.simpleicons.org/bluesky?viewbox=auto'
+const yt = 'https://cdn.simpleicons.org/youtube?viewbox=auto'
 
 export default function Home() {
 	return (
@@ -79,25 +84,25 @@ export default function Home() {
 				<h3>Gallery</h3>
 				<div className="photo-gallery-container">
 					<Link rel="noopener noreferrer" href="https://jackaustin.itch.io/vector-c">
-						<img
-							src="/games/vector-c.png"
+						<Image
+							src={VectorCImage}
 							alt="Vector-C, Link two-player, arcade-style, top-down shooter."
 						/>
 					</Link>
 					<Link rel="noopener noreferrer" href="https://jackaustin.itch.io/portal-warpin-robot-killer">
-						<img
-							src="/games/portal_robot_0.png"
+						<Image
+							src={PortalWarpinImage}
 							alt="A brightly glowing orange portal down Link concrete corridor"
 						/>
 					</Link>
 					<Link rel="noopener noreferrer" href="https://jackaustin.itch.io/space-western">
-						<img
-							src="/games/space_western.png"
+						<Image
+							src={SpaceWesternImg}
 							alt="An inventory lit up by the desert sun"
 						/>
 					</Link>
-					<img
-						src="/games/the_room.png"
+					<Image
+						src={TheRoomImg}
 						alt="A quiet storage room at night, illuminated by Link lamp"
 					/>
 				</div>
