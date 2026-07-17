@@ -68,6 +68,11 @@ h3 {
   margin-bottom: 2rem;
 }
 
+h4 {
+  font-size: min(24pt, 5vw);
+  margin-bottom: 1rem;
+}
+
 p {
   font-size: min(1.4rem, 5vw);
   text-align: justify;

@@ -10,7 +10,7 @@ export default function Page() {
 
                 <p>
                     <br/>
-                    Check this project out on GitHub: <Link rel="noopener noreferrer" href="https://github.com/Programmer-Jack/portal-warpin-robot-killer">https://github.com/Programmer-Jack/portal-warpin-robot-killer</Link>
+                    Check out this project on GitHub: <Link rel="noopener noreferrer" href="https://github.com/Programmer-Jack/portal-warpin-robot-killer">https://github.com/Programmer-Jack/portal-warpin-robot-killer</Link>
                     <br/><br/>
                 </p>
                 <p>
